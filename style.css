@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 100px;
+    background-color: lightgoldenrodyellow;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#main-image {
+    width: 400px;
+    border: solid;
+    border-radius: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+#my-name {
+    text-align: center;
+}
+
+.li {
+    color: grey;
+}
+
+a {
+    color: brown;
+}
+
+a:hover {
+    color: black;
+}
