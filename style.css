@@ -1,4 +1,4 @@
-body{
+.container-fluid{
     margin: 0;
     padding: 100px;
     background-color: lightgoldenrodyellow;
@@ -39,4 +39,30 @@ a {
 
 a:hover {
     color: black;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #main-image {
+        width: 300px;
+    }
+
+    .shops {
+        width: 30%;
+    }
+
+    .text {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1179px) and (min-width: 1024px){
+    #main-image {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #main-image {
+        width: 500px;
+    }
 }
