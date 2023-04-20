@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h3>Manga</h3>
+    </div>
+    <form action="/add" method="post">
+    <div>
+        <input type="text" name="name" placeholder="Name">
+    </div>
+    <div>
+        <input type="text" name="pages" placeholder="Page count">
+    </div>
+    <div>
+        <input type="text" name="year" placeholder="Year of release">
+    </div>
+    <button type="submit" style="width: 50px">Add</button>
+    </form>
+    {{.name}} {{.text}}
+</body>
+</html>
