@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>See</title>
+    <style>
+        th {
+            width: 200px;
+        }
+        table, th, td {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="margin: 50px 80px">
+        <h2>All manga in database</h2>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Page count</th>
+                <th>Year</th>
+                <th>Update</th>
+            </tr>
+            {{range .}}
+            <tr>
+                <td>{{.Id}}</td>
+                <td>{{.Name}}</td>
+                <td>{{.PageCount}}</td>
+                <td>{{.Year}}</td>
+                <form action="/update"><td><button name="id" value={{.Id}}>Update</button></td></form>
+            </tr>
+            {{end}}
+        </table>
+    </div>
+</body>
+</html>

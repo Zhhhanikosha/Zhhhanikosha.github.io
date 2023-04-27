@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <style>
+        body {
+            margin: 50px 80px
+        }
+        div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<h2>Add new manga</h2>
+    <form action="/update" method="post">
+        <div>
+            <input type="hidden" name="id" value="{{.id}}">
+        </div>
+        <div>
+            <input type="text" placeholder="Name" name="name">
+        </div>
+        <div>
+            <input type="number" placeholder="Page count" name="pagecount">
+        </div>
+        <div>
+            <input type="number" placeholder="Year" name="year">
+        </div>
+        <div>
+            <button type="submit">update</button>
+        </div>
+    </form>
+</body>
+</html>
